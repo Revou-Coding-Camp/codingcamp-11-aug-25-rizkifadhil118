@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">🌐</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#profile">My Profile</a></li>
+                <li><a href="#skills">My Skills</a></li>
+                <li><a href="#message">Message Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="home black-bg white-text">
+        <h1 id="welcome-text">Hi, Welcome To My Portfolio</h1>
+        <p>Learn more about me and my professional abilities.</p>
+    </section>
+
+    <section id="profile" class="profile blue-bg">
+        <h2>My Profile</h2>
+        <div class="profile-container">
+            <img src="images/profile.png" alt="My Photo" class="profile-photo">
+            <div class="profile-text">
+                <p>My name is Muhammad Rizki Fadhillah. I was born on 16th of February 2001. I'm an IT Engineer based in Bekasi, Indonesia.</p>
+                <p>I am a passionate developer and lifelong learner, with a strong drive to create digital solutions. My work ranges from building engaging and functional websites, analyzing complex datasets, to developing robust applications. I value clean design, efficient code.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills white-bg">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+            <div class="skill-item">
+                <img src="images/skill1.png" alt="Web Creation">
+                <p>Web Creation – Building responsive and user-friendly websites using HTML, CSS, and JavaScript.</p>
+            </div>
+            <div class="skill-item">
+                <img src="images/skill2.png" alt="Data Analytics">
+                <p>Data Analytics – Analyzing and processing data using Python for insights and decision-making.</p>
+            </div>
+            <div class="skill-item">
+                <img src="images/skill3.png" alt="App Development">
+                <p>App Development – Creating efficient and functional applications using the C programming language.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="message" class="message blue-bg">
+        <h2>Message Me</h2>
+        <div class="form-container">
+            <form id="contact-form">
+                <label>Name :</label>
+                <input type="text" id="name" name="name">
+
+                <label>Email :</label>
+                <input type="email" id="email" name="email">
+
+                <label>Phone Number :</label>
+                <input type="tel" id="phone" name="phone">
+
+                <label>Date of Birth :</label>
+                <input type="date" id="birthdate" name="birthdate">
+
+                <label>Gender :</label>
+                <div class="gender-options">
+                    <label><input type="radio" name="gender" value="Male"> Male</label>
+                    <label><input type="radio" name="gender" value="Female"> Female</label>
+                </div>
+
+                <label>Message :</label>
+                <textarea id="message-text" name="message-text"></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+
+            <div class="form-output">
+                <p id="current-time"></p>
+                <div id="output-data"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Created by Muhammad Rizki Fadhillah</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
